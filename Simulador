@@ -1,0 +1,31 @@
+import random
+import time
+
+frases = [
+    "🚀 Despegando hacia el mundo Python...",
+    "🐍 Alimentando a la serpiente...",
+    "💻 Compilando creatividad...",
+    "🎲 Generando diversión aleatoria...",
+    "🔥 Activando modo épico..."
+]
+
+print("=" * 40)
+print("      MINI SIMULADOR DIVERTIDO")
+print("=" * 40)
+
+for i in range(5):
+    frase = random.choice(frases)
+    print(frase)
+    time.sleep(1)
+
+numero = random.randint(1, 10)
+
+print("\n🎯 He pensado un número del 1 al 10.")
+usuario = int(input("👉 Adivina cuál es: "))
+
+if usuario == numero:
+    print("🏆 ¡Increíble! ¡Adivinaste!")
+else:
+    print(f"😅 Casi... el número era {numero}")
+
+print("\n✨ Fin del programa ✨")
